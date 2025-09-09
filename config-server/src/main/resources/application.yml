@@ -1,0 +1,13 @@
+spring:
+    application:
+      name: config-server
+    cloud:
+      config:
+        server:
+          git:
+            uri: https://github.com/JoyfulSteps/petclinic-microservices-rebuild-config.git
+            default-label: main
+            clone-on-start: true
+
+server:
+  port: 10888
