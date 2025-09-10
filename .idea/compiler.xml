@@ -10,6 +10,7 @@
         <module name="visits-service" />
         <module name="config-server" />
         <module name="customers-service" />
+        <module name="discovery-server" />
         <module name="vets-service" />
       </profile>
     </annotationProcessing>
@@ -19,6 +20,7 @@
       <module name="api-gateway" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="customers-service" options="-parameters" />
+      <module name="discovery-server" options="-parameters" />
       <module name="vets-service" options="-parameters" />
       <module name="visits-service" options="-parameters" />
     </option>
