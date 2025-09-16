@@ -6,20 +6,3 @@ spring:
   cloud:
     config:
       fail-fast: true
-
-# enable debug logging
-logging:
-  level:
-    org.springframework.cloud.gateway: DEBUG
-    org.springframework.web.reactive: DEBUG
-    reactor.netty: DEBUG
-
-#enable all actuator endpoints
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    health:
-      show-details: always
