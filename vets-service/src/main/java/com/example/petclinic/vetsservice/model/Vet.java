@@ -4,13 +4,14 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.util.Set;
 
 @Entity
 @Table(name = "vets")
 @Getter
 @Setter
-public class Vet {
+public class Vet implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
