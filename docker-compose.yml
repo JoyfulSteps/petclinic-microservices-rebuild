@@ -50,3 +50,13 @@ services:
     container_name: redis
     ports:
       - "6379:6379"
+
+  keycloak:
+    image: "quay.io/keycloak/keycloak:22.0.1"
+    container_name: keycloak
+    environment:
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin
+    ports:
+      - "18180:8080"
+    command: "start-dev"
