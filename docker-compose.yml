@@ -60,3 +60,15 @@ services:
     ports:
       - "18180:8080"
     command: "start-dev"
+
+  jenkins:
+    image: jenkins/jenkins:lts-jdk17
+    container_name: jenkins
+    ports:
+      - "18090:8080"
+      - "50000:50000"
+    volumes:
+      - ./jenkins_home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock # map docker socket
+    environment:
+      - "JENKINS_OPTS=--prefix=/jenkins"
