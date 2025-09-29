@@ -63,8 +63,10 @@ pipeline {
 
     post {
         always {
-            echo 'Pipeline finished.'
-            sh 'docker logout'
+            script {
+                echo 'Pipeline finished.'
+                sh 'docker logout'
+            }
             cleanWs()
         }
     }

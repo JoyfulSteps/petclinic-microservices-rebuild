@@ -25,3 +25,7 @@ dependency-reduced-pom.xml
 
 # VS Code
 .vscode/
+
+jenkins_home
+
+META-INF
