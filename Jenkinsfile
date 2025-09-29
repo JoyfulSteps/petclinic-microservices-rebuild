@@ -12,6 +12,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
+                cleanWs()
+
                 echo 'Checking out code...'
                 checkout scm
             }
