@@ -2,7 +2,7 @@ spring:
   application:
     name: notification-service
   config:
-    import: "configserver:http://localhost:10888"
+    import: "configserver:http://host.docker.internal:10888"
   cloud:
     config:
       fail-fast: true
